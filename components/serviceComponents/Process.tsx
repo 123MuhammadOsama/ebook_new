@@ -57,11 +57,11 @@ const Process = () => {
           {/* Center Image */}
           <div className="flex-shrink-0">
             <Image
-              src="/book_1.png"
+              src="/book11.png"
               alt="process"
               height={1000}
               width={500}
-              className="rounded-lg shadow-lg 2xl:h-[400px] 2xl:w-auto"
+              className="rounded-lg shadow-lg "
             />
           </div>
           {/* Right Aside */}
