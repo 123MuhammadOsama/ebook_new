@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for Swiper pagination dots */
+.swiper-pagination-bullet {
+    background-color: #3adc34; /* Change this to your desired color for inactive dots */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #e3342f; /* Change this to your desired color for active dots */
+  }
+  
+  /* Optional: Add hover effect */
+  .swiper-pagination-bullet:hover {
+    background-color: #6cb2eb; /* Change to your desired hover color */
+  }
+  
+
+  @keyframes scroll-vertical {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+  
+  .animate-scroll-vertical {
+    animation: scroll-vertical 40s linear infinite;
+  }
+  

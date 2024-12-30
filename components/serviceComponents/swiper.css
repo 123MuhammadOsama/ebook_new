@@ -1,0 +1,21 @@
+/* swiper.css */
+.swiper-pagination-bullet {
+    background-color: red; /* Set inactive dot color to red */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: rgb(153, 41, 41); /* Set active dot color to a darker red */
+  }
+  
+  /* Optional: Add hover effect */
+  .swiper-pagination-bullet:hover {
+    background-color: lightcoral; /* Change hover color if desired */
+  }
+  /* Add margin to pagination dots */
+.custom-pagination {
+  margin-top: 20px; /* Adjust the value to increase/decrease the space */
+}
+/* Ensures a consistent margin between the book slider and pagination dots */
+.swiper-pagination {
+  margin-top: 20px; /* Adjust the value as needed to set a fixed gap */
+}
