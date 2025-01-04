@@ -17,14 +17,20 @@ const Discount = () => {
     phone: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>): void => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ): void => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
     e.preventDefault();
     try {
       const response = await fetch('/api/HomeForm', {
@@ -38,12 +44,12 @@ const Discount = () => {
       const result = await response.json();
       if (response.ok) {
         toast.success('Form submitted successfully!', {
-          position: "top-right",
+          position: 'top-right',
           autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
           draggable: true,
-          theme: "colored",
+          theme: 'colored',
           style: {
             backgroundColor: '#083554', // Green background for success
             color: '#fff', // White text
@@ -56,12 +62,12 @@ const Discount = () => {
         });
       } else {
         toast.error(result.message || 'Failed to send message', {
-          position: "top-right",
+          position: 'top-right',
           autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
           draggable: true,
-          theme: "colored",
+          theme: 'colored',
           style: {
             backgroundColor: '#083554', // Red background for error
             color: '#fff', // White text
@@ -71,12 +77,12 @@ const Discount = () => {
     } catch (error) {
       console.error('Error submitting form:', error);
       toast.error('Failed to send message', {
-        position: "top-right",
+        position: 'top-right',
         autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         draggable: true,
-        theme: "colored",
+        theme: 'colored',
         style: {
           backgroundColor: '#f44336', // Red background for error
           color: '#fff', // White text
@@ -86,8 +92,10 @@ const Discount = () => {
   };
 
   return (
-    <section className="relative flex justify-center items-center bg-white shadow-lg rounded-3xl border-2 border-gray-300 lg:max-w-6xl md:max-w-6xl max-w-[450px]
-     h-auto my-6 mx-auto p-6 md:p-11 bottom-20">
+    <section
+      className="relative flex justify-center items-center bg-white shadow-lg rounded-3xl border-2 border-gray-300 lg:max-w-6xl md:max-w-6xl max-w-[450px]
+     h-auto my-6 mx-auto p-6 md:p-11 bottom-20"
+    >
       <ToastContainer
         className="toast-container"
         position="top-right"
@@ -99,11 +107,12 @@ const Discount = () => {
         theme="light"
       />
       <div className="text-[#083554] w-full">
-      <span className="xl:text-4xl md:text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-[30px] flex justify-center">
-          Don’t Let the Next Opportunity Slip Away – Hire a Pro Now!
+        <span className="xl:text-4xl md:text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-[30px] flex justify-center">
+          Get In-Touch Today & Start Earning from Your Ebook Faster!
         </span>
 
-        <form className="flex flex-col md:flex-row items-center justify-center gap-4 mt-5"
+        <form
+          className="flex flex-col md:flex-row items-center justify-center gap-4 mt-5"
           onSubmit={handleSubmit}
         >
           <input
@@ -133,7 +142,7 @@ const Discount = () => {
             onChange={handleChange}
             required
           />
-          
+
           <button
             type="submit"
             className="px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-700 duration-300 flex items-center justify-center w-full md:w-auto"

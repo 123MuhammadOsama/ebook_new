@@ -34,7 +34,7 @@ const Features = () => {
         'We manage the whole publishing process, ensuring your ebook is formatted and ready for distribution across major platforms with ease.',
     },
     {
-      icon: '/card4.jpeg',
+      icon: '/card6.jpeg',
       title: 'Ebook Marketing',
       description:
         'We get your ebook noticed! Our marketing pros know how to hit your target audience, boost visibility, and create lasting buzz for your work.',

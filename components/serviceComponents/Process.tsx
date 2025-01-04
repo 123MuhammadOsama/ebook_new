@@ -6,11 +6,12 @@ const Process = () => {
   return (
     <div className="py-10">
       <h2 className="text-[32px] font-bold text-center">
-        Our <span className="text-red-500">Process</span>
+        Our <span className="text-red-500">Process</span> - Where Ideas Meet
+        Execution
       </h2>
-      <div className="px-2 md:px-4 lg:px-10 xl:px-20 2xl:px-20 pt-5">
+      <div className="px-2 md:px-4 lg:px-4 xl:px-10 2xl:px-20 pt-5">
         {/* Process Section */}
-        <div className="flex flex-col xl:flex-row items-center justify-between gap-5">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-5">
           {' '}
           {/* Decreased gap to 5 */}
           {/* Left Aside */}
@@ -21,36 +22,31 @@ const Process = () => {
               <h3 className="flex items-center">
                 <GiArchiveResearch className="text-6xl" />
                 <span className="text-[22px] lg:text-[24px] font-semibold pl-2">
-                  Extensive Research along with outlining of the draft
+                  Concept & Strategy Meeting
                 </span>
               </h3>
               <p className="text-[14px] lg:text-[16px]">
-                Our staff contacts the client when the order is dropped and
-                addresses every aspect of the plot or premise or whatever the
-                book is about. Then the committee calls a meeting to speak to
-                the team about the proposal. And when he is sure he can create a
-                masterpiece with the concept, the team chooses which writer to
-                give the job or the writer volunteers. The drafting process
-                starts the very next day, and a writer begins to work on your
-                idea.
+                This step sets the stage for a seamless creative process, making
+                sure every word, chapter, and design reflects your aspirations
+                perfectly. Whether it’s a rough idea or a full outline, we map
+                out your goals, audience, and tone to create a structured plan.
+                You’ll have a roadmap that aligns with your expectations.
               </p>
             </div>
             <div>
               <h3 className="flex items-center">
                 <GiArchiveResearch className="text-6xl" />
                 <span className="text-[22px] lg:text-[24px] font-semibold pl-2">
-                  Extensive Research along with outlining of the draft
+                  The Research & Writing
                 </span>
               </h3>
               <p className="text-[14px] lg:text-[16px]">
-                Our staff contacts the client when the order is dropped and
-                addresses every aspect of the plot or premise or whatever the
-                book is about. Then the committee calls a meeting to speak to
-                the team about the proposal. And when he is sure he can create a
-                masterpiece with the concept, the team chooses which writer to
-                give the job or the writer volunteers. The drafting process
-                starts the very next day, and a writer begins to work on your
-                idea.
+                This is where your idea comes alive. Our expert ghostwriters dig
+                into extensive research, ensuring accuracy and relevance. Using
+                your inputs and our expertise, we write compelling content
+                custom to your audience and genre. From fiction to non-fiction,
+                every word is carefully chosen to resonate. Regular updates keep
+                you in the loop.
               </p>
             </div>
           </div>
@@ -72,36 +68,32 @@ const Process = () => {
               <h3 className="flex items-center">
                 <GiArchiveResearch className="text-6xl" />
                 <span className="text-[22px] lg:text-[24px] font-semibold pl-2">
-                  Extensive Research along with outlining of the draft
+                  Professional Editing & Design
                 </span>
               </h3>
               <p className="text-[14px] lg:text-[16px]">
-                Our staff contacts the client when the order is dropped and
-                addresses every aspect of the plot or premise or whatever the
-                book is about. Then the committee calls a meeting to speak to
-                the team about the proposal. And when he is sure he can create a
-                masterpiece with the concept, the team chooses which writer to
-                give the job or the writer volunteers. The drafting process
-                starts the very next day, and a writer begins to work on your
-                idea.
+                Perfection lies in the details, and this step is all about
+                refining. Our editors keenly polish your manuscript for grammar,
+                tone, and flow. Simultaneously, our designers craft a stunning,
+                eye-catching cover and format the ebook for readability. We
+                ensure your final product is ready to make a powerful impact on
+                readers everywhere.
               </p>
             </div>
             <div>
               <h3 className="flex items-center">
                 <GiArchiveResearch className="text-6xl" />
                 <span className="text-[22px] lg:text-[24px] font-semibold pl-2">
-                  Extensive Research along with outlining of the draft
+                  Publishing & Distribution
                 </span>
               </h3>
               <p className="text-[14px] lg:text-[16px]">
-                Our staff contacts the client when the order is dropped and
-                addresses every aspect of the plot or premise or whatever the
-                book is about. Then the committee calls a meeting to speak to
-                the team about the proposal. And when he is sure he can create a
-                masterpiece with the concept, the team chooses which writer to
-                give the job or the writer volunteers. The drafting process
-                starts the very next day, and a writer begins to work on your
-                idea.
+                As a trusted provider of low cost yet best ebook publisher
+                services in USA, we ensure your polished ebook has a flawless
+                debut on major platforms like Amazon and niche retailers. We
+                optimize metadata, ensure proper formatting, and handle all the
+                technical details. Your story reaches a global audience with
+                ease. Sit back as we handle the publishing logistics.
               </p>
             </div>
           </div>

@@ -14,28 +14,27 @@ import Migrate from '@/components/serviceComponents/Migrate';
 import Bookmarketeer from '@/components/serviceComponents/Bookmarketeer';
 
 export const metadata = {
-  slug: 'service',
+  slug: 'ebook-publishing-services',
   serviceName: "World's Leading eBook Writing Specialists USA",
-  path: '/',
-  title:
-    'Expert eBook Writing Services USA | Transform Your Ideas Into Bestsellers',
+  path: '/ebook-publishing-services',
+  title: 'EBook Publishing Services - Best EBook Publishing Agency',
   description:
-    'Partner with our professional eBook writing specialists to turn your ideas into bestselling eBooks. From concept creation to publication, we make it seamless. Get started today!',
+    'Want to reach millions of readers by publishing your ebook? hire our ebook publishing services today at affordable prices and showcase your work to global audience',
   last_modified: '2024-11-17',
   isoDate: new Date('2024-10-23').toISOString(),
   alternates: {
-    canonical: 'https://ebookwriters.com/service', // Ensure this is the correct domain.
+    canonical: 'https://ebookwritingstudio.com/ebook-publishing-services', // Ensure this is the correct domain.
   },
   openGraph: {
-    title: 'Expert eBook Writing Services | Trusted eBook Specialists USA',
+    title: 'EBook Publishing Services - Best EBook Publishing Agency',
     description:
-      'Looking for top-tier eBook writing services? Work with our skilled writers and editors to create compelling, professional eBooks. Achieve your publishing goals today!',
+      'Want to reach millions of readers by publishing your ebook? hire our ebook publishing services today at affordable prices and showcase your work to global audience',
     locale: 'en_US',
     type: 'website',
     publishedTime: '2024-10-23T00:00:00.000Z',
     authors: 'eBook Writers Team',
     site_name: 'eBook Writers USA',
-    url: 'https://ebookwriters.com/service',
+    url: 'https://ebookwritingstudio.com/ebook-publishing-services',
     images: [
       {
         url: 'https://ebookwriters.com/_next/image?url=%2Fassets%2Febook_banner.png&w=1200&q=75',
@@ -58,6 +57,7 @@ export const metadata = {
     ],
   },
 };
+
 const About = () => {
   return (
     <div>

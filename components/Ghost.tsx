@@ -27,7 +27,6 @@ const images = [
   { src: '/book17.png', alt: 'book17' },
   { src: '/book18.png', alt: 'book18' },
   { src: '/book19.png', alt: 'book19' },
-
 ];
 
 const Ghost = () => {
@@ -35,42 +34,44 @@ const Ghost = () => {
     <div className=" px-4 lg:px-20 xl:px-32 py-10">
       <div className="text-start mb-10">
         <h2 className="text-[26px] lg:text-[28px] font-bold mb-2">
-        The Leading <span className="text-red-500">Ebook Writing Company</span> With A Record of 5000+ Successful Ebook Projects!
+          The Leading{' '}
+          <span className="text-red-500">Ebook Writing Company</span> With A
+          Record of 5000+ Successful Ebook Projects!
         </h2>
-        <p className='text-[14px] lg:text-[16px]'>
-        Having completed over 5000 ebook projects, our ebook ghostwriters bring vast experience to the table, combining skill, and creativity to deliver high-quality work worldwide.
-
+        <p className="text-[14px] lg:text-[16px]">
+          Having completed over 5000 ebook projects, our ebook ghostwriters
+          bring vast experience to the table, combining skill, and creativity to
+          deliver high-quality work worldwide.
         </p>
       </div>
 
       <Swiper
-  spaceBetween={5}
-  slidesPerView={5}
-  loop={true}
-  autoplay={{
-    delay: 1000,
-    disableOnInteraction: false,
-  }}
-  pagination={{
-    clickable: true,
-    dynamicBullets: true,
-  }}
-  modules={[Autoplay, Pagination]}
-  className="relative h-[200px] md:h-[300px] lg:h-[400px]" 
->
-  {images.map((image, index) => (
-    <SwiperSlide key={index}>
-      <Image
-        src={image.src}
-        alt={image.alt}
-        height={400} 
-        width={300} 
-        className="transition-all duration-700 ease-linear object-contain"
-      />
-    </SwiperSlide>
-  ))}
-</Swiper>
-
+        spaceBetween={5}
+        slidesPerView={5}
+        loop={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+          dynamicBullets: true,
+        }}
+        modules={[Autoplay, Pagination]}
+        className="relative h-[200px] md:h-[300px] lg:h-[400px]"
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <Image
+              src={image.src}
+              alt={image.alt}
+              height={400}
+              width={300}
+              className="transition-all duration-700 ease-linear object-contain"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
       <div className="flex justify-center mt-6">
         <div className="swiper-pagination"></div>

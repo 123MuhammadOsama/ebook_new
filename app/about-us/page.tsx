@@ -1,28 +1,33 @@
-import ContactForm from '@/components/contactComponent/firstSection'
-
-import React from 'react'
+import AboutFeatures from '@/components/aboutComponents/AboutFeatures';
+import FifthSection from '@/components/aboutComponents/FifthSection';
+import FirstSection from '@/components/aboutComponents/FirstSection';
+import FourthSection from '@/components/aboutComponents/FourthSection';
+// import SixthSection from '@/components/aboutComponents/SixthSection'
+import ThirdSection from '@/components/aboutComponents/ThirdSection';
+import Contact from '@/components/Contact';
+import React from 'react';
 export const metadata = {
-  slug: 'contact',
+  slug: 'about-us',
   serviceName: "World's Leading eBook Writing Specialists USA",
-  path: '/contact',
-  title: 'Expert eBook Writing Services USA | Transform Your Ideas Into Bestsellers',
+  path: '/about-us',
+  title: 'About Us - Ebook Writing Studio',
   description:
-    'Partner with our professional eBook writing specialists to turn your ideas into bestselling eBooks. From concept creation to publication, we make it seamless. Get started today!',
+    'Want to learn more about our best ebook writing services, pricing, policies and other stuff just click on this page.',
   last_modified: '2024-11-17',
   isoDate: new Date('2024-10-23').toISOString(),
   alternates: {
-    canonical: 'https://ebookwriters.com/contact', // Ensure this is the correct domain.
+    canonical: 'https://ebookwritingstudio.com/about-us', // Ensure this is the correct domain.
   },
   openGraph: {
-    title: 'Expert eBook Writing Services | Trusted eBook Specialists USA',
+    title: 'About Us - Ebook Writing Studio',
     description:
-      'Looking for top-tier eBook writing services? Work with our skilled writers and editors to create compelling, professional eBooks. Achieve your publishing goals today!',
+      'Want to learn more about our best ebook writing services, pricing, policies and other stuff just click on this page.',
     locale: 'en_US',
     type: 'website',
     publishedTime: '2024-10-23T00:00:00.000Z',
     authors: 'eBook Writers Team',
     site_name: 'eBook Writers USA',
-    url: 'https://ebookwriters.com/contact',
+    url: 'https://ebookwritingstudio.com/about-us',
     images: [
       {
         url: 'https://ebookwriters.com/_next/image?url=%2Fassets%2Febook_banner.png&w=1200&q=75',
@@ -48,10 +53,15 @@ export const metadata = {
 const About = () => {
   return (
     <div>
-      
-      <ContactForm/>
+      <FirstSection />
+      <AboutFeatures />
+      <ThirdSection />
+      <FourthSection />
+      <FifthSection />
+      {/* <SixthSection/> */}
+      <Contact />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

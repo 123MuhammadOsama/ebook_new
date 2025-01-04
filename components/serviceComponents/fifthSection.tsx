@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
@@ -14,10 +14,26 @@ type Review = {
 };
 
 const reviews: Review[] = [
-  { id: 1, imageUrl: '/testimonial1.png', text: 'E-book writing has transformed our content approach. The team’s expertise is unmatched, making us leaders in digital publishing.' },
-  { id: 2, imageUrl: '/testimonial2.png', text: 'A phenomenal service with skilled writers who truly understand the art of storytelling. Our brand’s voice is now clearer than ever.' },
-  { id: 3, imageUrl: '/testimonial3.png', text: 'Professional, timely, and incredibly insightful. The e-book writing service took our project to new heights and helped boost our online presence.' },
-  { id: 4, imageUrl: '/testimonial4.png', text: 'Professional, timely, and incredibly insightful. The e-book writing service took our project to new heights and helped boost our online presence.' },
+  {
+    id: 1,
+    imageUrl: '/testimonial1.png',
+    text: 'I threw some random ideas at them, and boom, they turned it into a masterpiece. I didn’t know my thoughts could look this good on paper.',
+  },
+  {
+    id: 2,
+    imageUrl: '/testimonial2.png',
+    text: 'This team made me feel seen. Fast, creative, and ridiculously good at what they do. 10/10.',
+  },
+  {
+    id: 3,
+    imageUrl: '/testimonial3.png',
+    text: 'I didn’t just get an ebook; I got a whole vibe. These people get modern storytelling and made my content pop like never before.',
+  },
+  {
+    id: 4,
+    imageUrl: '/testimonial4.png',
+    text: 'My ebook went from 0 to 100, thanks to this crew. They helped me hit every single one of my goals.',
+  },
 ];
 
 const Testimonial = () => {
@@ -25,13 +41,18 @@ const Testimonial = () => {
 
   return (
     <div className="bg-black w-full px-4 sm:px-10 md:px-20 py-10 relative">
-      <div className="bg-red-600 w-[90%] sm:w-[500px] text-white font-bold py-4 sm:py-4 text-center
+      <div
+        className="bg-red-600 w-[90%] sm:w-[500px] text-white font-bold py-4 sm:py-2 text-center
          mx-auto sm:absolute sm:left-[100px] md:left-[200px] lg:left-[300px]
-        xl:left-[450px] 2xl:left-[650px] sm:top-[-40px] sm:-rotate-6 mb-8 sm:mb-0 2xl:py-8">
-        <h2 className='text-[26px] lg:text-[28px]'>TESTIMONIALS</h2>
+        xl:left-[450px] 2xl:left-[650px] top-[-80px] sm:top-[-40px] -rotate-6 mb-8 sm:mb-0 2xl:py-8"
+      >
+        <h2 className="text-[26px] lg:text-[28px]">
+          No-Filter Clients’ Feedback
+        </h2>
       </div>
       <p className="text-white text-center text-base text-[14px] lg:text-[16px] px-4 pt-10 2xl:pt-20 sm:px-24 md:px-20 lg:px-40 2xl:px-[600px]">
-        Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service
+        Don’t just take our word for it—see why our clients keep coming back for
+        more. Here’s the tea!
       </p>
 
       <div className="flex flex-col xl:flex-row items-center justify-center text-white pt-8 sm:pt-[50px]">
@@ -51,7 +72,7 @@ const Testimonial = () => {
             },
             1280: {
               slidesPerView: 3,
-            }
+            },
           }}
           className="mySwiper w-full"
         >

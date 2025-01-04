@@ -4,43 +4,31 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
-});
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
-});
-
 export const metadata = {
   slug: 'home',
-  serviceName: "World's Leading eBook Writing Specialists USA",
+  serviceName: 'Ebook Writing Services – Hire Affordable Ebook Ghost Writers',
   path: '/',
-  title:
-    'Expert eBook Writing Services USA | Transform Your Ideas Into Bestsellers',
+  title: 'Ebook Writing Services – Hire Affordable Ebook Ghost Writers',
   description:
-    'Partner with our professional eBook writing specialists to turn your ideas into bestselling eBooks. From concept creation to publication, we make it seamless. Get started today!',
-  last_modified: '2024-11-17',
-  isoDate: new Date('2024-10-23').toISOString(),
+    'Hire Ebook Ghostwriters at ebookwritingstudio.com, Bring Your Vision to life with our top ebook writing services. Trust us for writing, editing and publishing.',
+  last_modified: '17/11/2024',
+  isoDate: new Date('10/23/2024').toISOString(),
   alternates: {
-    canonical: 'https://ebookwriters.com', // Ensure this is the correct domain.
+    canonical: 'https://ebookwritingstudio.com/',
   },
   openGraph: {
-    title: 'Expert eBook Writing Services | Trusted eBook Specialists USA',
+    title: 'Ebook Writing Services – Hire Affordable Ebook Ghost Writers',
     description:
-      'Looking for top-tier eBook writing services? Work with our skilled writers and editors to create compelling, professional eBooks. Achieve your publishing goals today!',
+      'Hire Ebook Ghostwriters at ebookwritingstudio.com, Bring Your Vision to life with our top ebook writing services. Trust us for writing, editing and publishing.',
     locale: 'en_US',
-    type: 'website',
-    publishedTime: '2024-10-23T00:00:00.000Z',
+    type: 'article',
+    publishedTime: '2024-11-11T00:00:00.000Z',
     authors: 'eBook Writers Team',
     site_name: 'eBook Writers USA',
-    url: 'https://ebookwriters.com',
+    url: 'https://ebookwritingstudio.com/',
     images: [
       {
-        url: 'https://ebookwriters.com/_next/image?url=%2Fassets%2Febook_banner.png&w=1200&q=75',
+        url: 'https://ebookwritingstudio.com/_next/image?url=%2Flogo.png&w=256&q=75',
         width: 1200,
         height: 628,
         type: 'image/png',
@@ -60,6 +48,17 @@ export const metadata = {
     ],
   },
 };
+
+const geistSans = localFont({
+  src: './fonts/GeistVF.woff',
+  variable: '--font-geist-sans',
+  weight: '100 900',
+});
+const geistMono = localFont({
+  src: './fonts/GeistMonoVF.woff',
+  variable: '--font-geist-mono',
+  weight: '100 900',
+});
 
 export default function RootLayout({
   children,

@@ -1,118 +1,115 @@
-
 import React from 'react';
 
 const AboutFeatures = () => {
-    return (
-        <section className="bg-white py-16 px-4 xl:px-20 lg:px-0 text-[#a8e5fd]">
-    
-          
-    
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-0 lg:mx-[40px] xl:mx-[100px] ">
-            <div className="max-w-2xl">
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
-            Hire an <span className="text-red-500">Affordable Ghost Writing</span> <span className="text-black-500">Company to vanish your publishing problems</span>
+  return (
+    <section className="bg-white py-16 px-4 xl:px-20 lg:px-0 text-[#a8e5fd]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-0 lg:mx-[40px] xl:mx-[100px] ">
+        <div className="max-w-2xl">
+          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
+            <span className="text-red-500">Expert Team</span> with Proven
+            Experience
           </h2>
           <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          If you are looking around for the cheapest eBook writers for hiring purposes, put the seal on your search! EBookwritings.com is the cheapest eBook ghostwriting agency offering its high-quality eBook writing services at the lowest prices. Our cheap eBook writing service helps the audience to work with the first-class eBook ghostwriting company, without breaking the bank.
+            Our team consists of experienced professionals who bring years of
+            expertise to the ebook publishing process. From skilled writers to
+            top-notch editors, designers, and marketers, our team is equipped
+            with the knowledge and experience to guide your ebook from concept
+            to publication. With a deep understanding of the digital book
+            market, we ensure that every aspect of your ebook is handled with
+            the utmost care and professionalism.
           </p>
+        </div>
 
-          <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          To further make the experience memorable for the audience, several lucrative packages are offered by us. These packages empower clients to get their bulk orders completed without spending too much. However, quality is our foremost significant priority, and that is never traded off for low-rate services. When you choose us over other eBook writing firms, you can have full confidence that an excellent value would be delivered to you. 
-          </p>
-
-          
-           
-            </div>
-    
-            <div className="max-w-2xl">
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
-            Hire an <span className="text-red-500">Affordable Ghost Writing</span> <span className="text-black-500">Company to vanish your publishing problems</span>
+        <div className="max-w-2xl">
+          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
+            End-to-End <span className="text-red-500">Publishing Services</span>
           </h2>
           <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          If you are looking around for the cheapest eBook writers for hiring purposes, put the seal on your search! EBookwritings.com is the cheapest eBook ghostwriting agency offering its high-quality eBook writing services at the lowest prices. Our cheap eBook writing service helps the audience to work with the first-class eBook ghostwriting company, without breaking the bank.
+            We offer comprehensive publishing services for book & ebooks that
+            take you from the initial idea to a published ebook ready for
+            distribution. Our team caters to everything, from writing and
+            editing to formatting, cover design, and finally, getting your ebook
+            to the right audience. With a streamlined process, you can relax
+            while we handle the rest. Whether you’re launching your first ebook
+            or scaling up your presence, our end-to-end publishing service is
+            designed to support your goals at every stage.
           </p>
+        </div>
+      </div>
 
-          <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          To further make the experience memorable for the audience, several lucrative packages are offered by us. These packages empower clients to get their bulk orders completed without spending too much. However, quality is our foremost significant priority, and that is never traded off for low-rate services. When you choose us over other eBook writing firms, you can have full confidence that an excellent value would be delivered to you. 
-          </p>
-
-          
-           
-            </div>
-          </div>
-
-    
-     
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16 lg:mx-[40px] xl:mx-[100px]">
-            <div className="max-w-2xl">
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
-           Leading <span className="text-red-500">E-Book Writing Service</span> <span className="text-black-500">in USA That Takes your Ideas to Next Level</span>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16 lg:mx-[40px] xl:mx-[100px]">
+        <div className="max-w-2xl">
+          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
+            <span className="text-red-500">High-Quality</span> Design and
+            Formatting
           </h2>
           <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          Our team of pro ghostwriters is sweeping USA by providing efficient eBook writing service across USA, counting Huston, New Jersey, Texas, California, and in all other states of it. Experienced book writing professionals of our agency compose and design winning content while keeping the story and its writer in complete consideration.
+            Your ebook’s design and formatting are crucial to its success in the
+            digital space. We understand that a polished and well-designed ebook
+            can capture the reader’s attention and encourage them to keep
+            reading. Therefore, our design team ensures that your ebook is
+            visually appealing, easy to navigate, and aligns with your genre’s
+            aesthetic. Whether it’s a compelling cover design or a clean,
+            easy-to-read interior layout, we use the best design principles to
+            make your ebook look professional and engaging.
           </p>
+        </div>
 
-          <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          We pay equal attention to all your details. Be it a selected theme, special additions, or the type of tone you need. Professional ghostwriters of our company can harmonize and pen down each thing accordingly. Apart from this, our team of grammatologists keenly works on cleaning all writing bugs from your book along with accurate formatting.
-          </p>
-            </div>
-    
-
-            <div className="max-w-2xl">
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
-           Leading <span className="text-red-500">E-Book Writing Service</span> <span className="text-black-500">in USA That Takes your Ideas to Next Level</span>
+        <div className="max-w-2xl">
+          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
+            <span className="text-red-500">Post-Publishing</span> Support
           </h2>
           <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          Our team of pro ghostwriters is sweeping USA by providing efficient eBook writing service across USA, counting Huston, New Jersey, Texas, California, and in all other states of it. Experienced book writing professionals of our agency compose and design winning content while keeping the story and its writer in complete consideration.
+            Our services don’t end once your ebook is published. We provide
+            post-publishing support to help you maintain your book’s presence in
+            the market. This includes free consultation on marketing strategies,
+            assistance with platform management, and troubleshooting any issues
+            that may arise after your ebook is live. Our all-inclusive ebook
+            distribution services for publishers help ensure that your ebook is
+            distributed on the right platforms to reach the widest audience
+            possible. We also provide ongoing insights and trends to ensure your
+            ebook stays visible long after its initial release.
           </p>
+        </div>
+      </div>
 
-          <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          We pay equal attention to all your details. Be it a selected theme, special additions, or the type of tone you need. Professional ghostwriters of our company can harmonize and pen down each thing accordingly. Apart from this, our team of grammatologists keenly works on cleaning all writing bugs from your book along with accurate formatting.
-          </p>
-
-          
-            </div>
-          </div>
-    
-    
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16 lg:mx-[40px] xl:mx-[100px] ">
-            <div className="max-w-2xl">
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
-            Hire an <span className="text-red-500">Affordable Ghost Writing</span> <span className="text-black-500">Company to vanish your publishing problems</span>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16 lg:mx-[40px] xl:mx-[100px] ">
+        <div className="max-w-2xl">
+          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
+            <span className="text-red-500">Customer-Centric</span> Approach
           </h2>
           <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          If you are looking around for the cheapest eBook writers for hiring purposes, put the seal on your search! EBookwritings.com is the cheapest eBook ghostwriting agency offering its high-quality eBook writing services at the lowest prices. Our cheap eBook writing service helps the audience to work with the first-class eBook ghostwriting company, without breaking the bank.
+            We place our customers at the heart of everything we do. Our
+            customizable solutions mean that we tailor our services to suit your
+            specific requirements, ensuring that you receive a product that
+            reflects your vision. We value your input throughout the process,
+            keeping the lines of communication open to ensure you’re always in
+            the loop and satisfied with the outcome. Your feedback is not only
+            welcomed but encouraged, as it helps us fine-tune every detail of
+            your ebook.
           </p>
+        </div>
 
-          <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          To further make the experience memorable for the audience, several lucrative packages are offered by us. These packages empower clients to get their bulk orders completed without spending too much. However, quality is our foremost significant priority, and that is never traded off for low-rate services. When you choose us over other eBook writing firms, you can have full confidence that an excellent value would be delivered to you. 
-          </p>
-
-          
-           
-            </div>
-    
-            <div className="max-w-2xl">
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
-            Hire an <span className="text-red-500">Affordable Ghost Writing</span> <span className="text-black-500">Company to vanish your publishing problems</span>
+        <div className="max-w-2xl">
+          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#010405] leading-tight">
+            <span className="text-red-500">Affordable Pricing</span> with Value
+            for Money
           </h2>
           <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          If you are looking around for the cheapest eBook writers for hiring purposes, put the seal on your search! EBookwritings.com is the cheapest eBook ghostwriting agency offering its high-quality eBook writing services at the lowest prices. Our cheap eBook writing service helps the audience to work with the first-class eBook ghostwriting company, without breaking the bank.
+            We believe in providing high-quality ebook publishing services that
+            are accessible and affordable. Our pricing structure is designed to
+            offer value for money without compromising on the quality of service
+            or the final product. We work with authors on all budgets, providing
+            scalable options that fit your financial needs. With us, there are
+            no hidden costs—everything is transparent and upfront, so you won’t
+            be caught off guard by surprise fees.
           </p>
+        </div>
+      </div>
 
-          <p className="text-[#020608] mt-4 text-[14px] lg:text-[16px] leading-relaxed">
-          To further make the experience memorable for the audience, several lucrative packages are offered by us. These packages empower clients to get their bulk orders completed without spending too much. However, quality is our foremost significant priority, and that is never traded off for low-rate services. When you choose us over other eBook writing firms, you can have full confidence that an excellent value would be delivered to you. 
-          </p>
-
-          
-           
-            </div>
-          </div>
-         
-          <div className="h-[4px] bg-red-500 my-4"></div>
-
-        </section>
-      );
+      <div className="h-[4px] bg-red-500 my-4"></div>
+    </section>
+  );
 };
 
 export default AboutFeatures;
