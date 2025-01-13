@@ -57,9 +57,9 @@ const FAQ = () => {
 
   return (
     <div className="mx-4 lg:mx-10 space-y-6 lg:space-y-10 mt-20 2xl:mx-36">
-      <h2 className="font-bold text-[32px] lg:text-[36px]">
+      <p className="font-bold text-[32px] lg:text-[36px]">
         Let’s Clear Things Up – <span className="text-red-500">FAQ Time!</span>
-      </h2>
+      </p>
       <p className="text-[18px] lg:text-[16px] w-[300px] sm:w-[500px] lg:w-[900px]">
         Everything you need to know about ebook creation and publishing, in one
         spot. Find the most common queries answered to initiate your ebook
@@ -74,7 +74,7 @@ const FAQ = () => {
             alt="FAQs"
             height={500}
             width={500}
-            className="bottom-0"
+            className="bottom-0 h-auto w-auto"
           />
         </div>
 

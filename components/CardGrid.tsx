@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 
@@ -34,7 +35,7 @@ const Features = () => {
         'We manage the whole publishing process, ensuring your ebook is formatted and ready for distribution across major platforms with ease.',
     },
     {
-      icon: '/card6.jpeg',
+      icon: '/card4.jpeg',
       title: 'Ebook Marketing',
       description:
         'We get your ebook noticed! Our marketing pros know how to hit your target audience, boost visibility, and create lasting buzz for your work.',
@@ -44,11 +45,11 @@ const Features = () => {
   return (
     <>
       <section className="px-8 md:px-8 lg:px-10 xl:px-32 py-10 space-y-10">
-        <div>
-          <h2 className="text-[32px] lg:text-[36px] font-bold mb-5">
+        <div className="items-center justify-center text-center">
+          <span className="text-[32px] lg:text-[36px] font-bold mb-5">
             OUR <span className="text-red-500">SERVICES</span>
-          </h2>
-          <p className="w-auto lg:w-1/2 text-[14px] lg:text-[16px]">
+          </span>
+          <p className="w-auto text-[14px] lg:text-[16px]">
             Tap expert writers and a partner who gets modern content marketing.
             In a sea of sameness, stand out in search with E-book writing
             Service
@@ -67,7 +68,7 @@ const Features = () => {
                 layout="responsive"
                 width={100}
                 height={100}
-                className="max-h-52 object-cover"
+                className="max-h-52 w-auto object-cover"
               />
               <div className="p-6">
                 <span className="font-bold text-xl mb-2 text-start block">

@@ -29,23 +29,29 @@ const ContactForm = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>): void => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ): void => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
     e.preventDefault();
     setIsSubmitting(true);
     toast.info('Submitting your request...', {
-      position: "top-right",
+      position: 'top-right',
       autoClose: 2000,
       hideProgressBar: true,
       closeOnClick: true,
       draggable: true,
-      theme: "light",
+      theme: 'light',
     });
 
     try {
@@ -60,15 +66,15 @@ const ContactForm = () => {
       const result = await response.json();
       if (response.ok) {
         toast.success('Form submitted successfully!', {
-          position: "top-right",
+          position: 'top-right',
           autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
           draggable: true,
-          theme: "colored",
+          theme: 'colored',
           style: {
             backgroundColor: '#083554',
-            color: '#fff', 
+            color: '#fff',
           },
         });
         setFormData({
@@ -82,23 +88,23 @@ const ContactForm = () => {
         });
       } else {
         toast.error(result.message || 'Failed to send message', {
-          position: "top-right",
+          position: 'top-right',
           autoClose: 3000,
           hideProgressBar: true,
           closeOnClick: true,
           draggable: true,
-          theme: "light",
+          theme: 'light',
         });
       }
     } catch (error) {
       console.error('Error submitting form:', error);
       toast.error('Failed to send message', {
-        position: "top-right",
+        position: 'top-right',
         autoClose: 3000,
         hideProgressBar: true,
         closeOnClick: true,
         draggable: true,
-        theme: "light",
+        theme: 'light',
       });
     } finally {
       setIsSubmitting(false);
@@ -117,13 +123,18 @@ const ContactForm = () => {
         draggable
         theme="light"
       />
-      <form 
+      <form
         className="w-full lg:max-w-2xl bg-white p-8 rounded-xl 2xl:ml-52 border-2 border-[#f04a4a] mt-24"
         onSubmit={handleSubmit}
       >
-        <h2 className="text-3xl font-bold mb-4 text-start text-[#ee4747]">Contact Our Business Proposal Experts</h2>
-        <div className='w-20 mb-4 border-b-4 border-[#ee4848]'></div>
-        <p className="text-start mb-4 text-[#ee4242]">We are anticipating working with you! Fill in the form and our representative will get back to you within 24 hours.</p>
+        <h2 className="text-3xl font-bold mb-4 text-start text-[#ee4747]">
+          Contact Our Business Proposal Experts
+        </h2>
+        <div className="w-20 mb-4 border-b-4 border-[#ee4848]"></div>
+        <p className="text-start mb-4 text-[#ee4242]">
+          We are anticipating working with you! Fill in the form and our
+          representative will get back to you within 24 hours.
+        </p>
 
         <div className="mb-4 grid grid-cols-2 gap-4">
           <input
@@ -224,32 +235,54 @@ const ContactForm = () => {
 
       <div className="w-full 2xl:w-1/2 2xl:h-[650px] mt-8 lg:mt-0 lg:ml-8 flex-grow lg:max-w-3xl 2xl:mr-28">
         <div className="hidden lg:block mt-24">
-          <Image 
-            src='/Mask_group.png'
-            alt='our team'
+          <Image
+            src="/Mask_group.png"
+            alt="our team"
             width={500}
             height={500}
-            title='our team'
+            title="our team"
+            className="h-auto w-auto"
           />
         </div>
 
         <div className="flex flex-col items-start justify-center bg-white p-8 rounded-xl shadow-md lg:max-w-[500px] h-[230px] mt-5 border-2 border-[#e44943]">
           <div className="mb-4 flex items-center">
-            <Phone size={40} className="mr-4 p-2 bg-red-200 rounded-full text-[#ec3c3c]" />
+            <Phone
+              size={40}
+              className="mr-4 p-2 bg-red-200 rounded-full text-[#ec3c3c]"
+            />
             <div>
               Phone <br />
-              <Link rel='nofollow' href="https://wa.me/254797755226" className="hover:underline">+254797755226</Link>
+              <Link
+                rel="nofollow"
+                href="https://wa.me/254797755226"
+                className="hover:underline"
+              >
+                +254797755226
+              </Link>
             </div>
           </div>
           <div className="mb-4 flex items-center">
-            <Mail size={40} className="mr-4 p-2 bg-red-200 rounded-full text-[#dd3737]" />
+            <Mail
+              size={40}
+              className="mr-4 p-2 bg-red-200 rounded-full text-[#dd3737]"
+            />
             <div>
               Email <br />
-              <Link rel='nofollow' href="mailto:scriptershubltd@gmail.com" className="hover:underline">scriptershubltd@gmail.com</Link>
+              <Link
+                rel="nofollow"
+                href="mailto:scriptershubltd@gmail.com"
+                className="hover:underline"
+              >
+                scriptershubltd@gmail.com
+              </Link>
             </div>
           </div>
           <div className="mb-4 flex items-center">
-            <MapPin size={40} className="mr-4 p-2 bg-red-200 rounded-full text-[#e24444]" />
+            <MapPin
+              size={40}
+              className="mr-4 p-2 bg-red-200 rounded-full text-[#e24444]"
+            />
             <div>
               Nairobi, Kenya <br />
               Kasarani, Mwiki

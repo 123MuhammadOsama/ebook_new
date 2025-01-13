@@ -33,11 +33,11 @@ const Ghost = () => {
   return (
     <div className=" px-4 lg:px-20 xl:px-32 py-10">
       <div className="text-start mb-10">
-        <h2 className="text-[26px] lg:text-[28px] font-bold mb-2">
+        <p className="text-[26px] lg:text-[28px] font-bold mb-2">
           Proven Excellence:{' '}
           <span className="text-red-500">1000+ eBooks Completed</span> & Still
           Counting the Orders...!
-        </h2>
+        </p>
         <p className="text-[14px] lg:text-[16px]">
           Tap into our expertise to impress your target readers. Our reputation
           speaks volumes among top ebook publishing companies worldwide.
@@ -66,7 +66,7 @@ const Ghost = () => {
               alt={image.alt}
               height={400}
               width={300}
-              className="transition-all duration-700 ease-linear object-contain"
+              className="transition-all duration-700 ease-linear object-contain h-auto w-auto"
             />
           </SwiperSlide>
         ))}

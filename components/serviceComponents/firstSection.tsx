@@ -18,8 +18,11 @@ const Hero = () => {
             ensure fast results, wide reach, and a professional touch tailored
             to your vision!
           </p>
-          <button className="bg-red-600 flex items-center text-lg sm:text-xl md:text-2xl font-bold text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-xl hover:bg-red-800 group">
-            <span className="transform transition-transform mr-2 sm:mr-3 duration-500 group-hover:-translate-x-2">
+          <button
+            className="bg-red-600 flex items-center text-sm  font-bold text-white
+         px-4  py-2 rounded-xl hover:bg-red-800 group"
+          >
+            <span className="transform transition-transform mr-2 sm:mr-3 duration-500 group-hover:-translate-x-2 font-semibold">
               LIVE CHAT
             </span>
             <IoPaperPlaneOutline className="transform transition-transform duration-500 group-hover:translate-x-2" />

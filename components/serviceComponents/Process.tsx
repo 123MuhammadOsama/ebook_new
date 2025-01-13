@@ -5,10 +5,10 @@ import { GiArchiveResearch } from 'react-icons/gi';
 const Process = () => {
   return (
     <div className="py-10">
-      <h2 className="text-[32px] font-bold text-center">
+      <p className="text-[32px] font-bold text-center">
         Our <span className="text-red-500">Process</span> - Where Ideas Meet
         Execution
-      </h2>
+      </p>
       <div className="px-2 md:px-4 lg:px-4 xl:px-10 2xl:px-20 pt-5">
         {/* Process Section */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-5">
@@ -19,12 +19,12 @@ const Process = () => {
             {' '}
             {/* Adjusted inner gap */}
             <div>
-              <h3 className="flex items-center">
+              <p className="flex items-center">
                 <GiArchiveResearch className="text-6xl" />
                 <span className="text-[22px] lg:text-[24px] font-semibold pl-2">
                   Concept & Strategy Meeting
                 </span>
-              </h3>
+              </p>
               <p className="text-[14px] lg:text-[16px]">
                 This step sets the stage for a seamless creative process, making
                 sure every word, chapter, and design reflects your aspirations
@@ -34,12 +34,12 @@ const Process = () => {
               </p>
             </div>
             <div>
-              <h3 className="flex items-center">
+              <p className="flex items-center">
                 <GiArchiveResearch className="text-6xl" />
                 <span className="text-[22px] lg:text-[24px] font-semibold pl-2">
                   The Research & Writing
                 </span>
-              </h3>
+              </p>
               <p className="text-[14px] lg:text-[16px]">
                 This is where your idea comes alive. Our expert ghostwriters dig
                 into extensive research, ensuring accuracy and relevance. Using
@@ -53,11 +53,11 @@ const Process = () => {
           {/* Center Image */}
           <div className="flex-shrink-0">
             <Image
-              src="/book11.png"
-              alt="process"
+              src="/asdas.png"
+              alt="rosalind"
               height={1000}
               width={500}
-              className="rounded-lg shadow-lg "
+              className=" h-[500px] w-[400px]"
             />
           </div>
           {/* Right Aside */}
@@ -65,12 +65,12 @@ const Process = () => {
             {' '}
             {/* Adjusted inner gap */}
             <div>
-              <h3 className="flex items-center">
+              <p className="flex items-center">
                 <GiArchiveResearch className="text-6xl" />
                 <span className="text-[22px] lg:text-[24px] font-semibold pl-2">
                   Professional Editing & Design
                 </span>
-              </h3>
+              </p>
               <p className="text-[14px] lg:text-[16px]">
                 Perfection lies in the details, and this step is all about
                 refining. Our editors keenly polish your manuscript for grammar,
@@ -81,12 +81,12 @@ const Process = () => {
               </p>
             </div>
             <div>
-              <h3 className="flex items-center">
+              <p className="flex items-center">
                 <GiArchiveResearch className="text-6xl" />
                 <span className="text-[22px] lg:text-[24px] font-semibold pl-2">
                   Publishing & Distribution
                 </span>
-              </h3>
+              </p>
               <p className="text-[14px] lg:text-[16px]">
                 As a trusted provider of low cost yet best ebook publisher
                 services in USA, we ensure your polished ebook has a flawless

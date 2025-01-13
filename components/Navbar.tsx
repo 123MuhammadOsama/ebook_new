@@ -1,5 +1,5 @@
 'use client';
-import { Mail } from 'lucide-react';
+import { ChevronDownIcon, ChevronUpIcon, Mail } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
@@ -11,6 +11,8 @@ const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 850px)' });
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // const [isSidebarDropdownOpen, setIsSidebarDropdownOpen] = useState(false);
 
   useEffect(() => {
     if (isDesktopOrLaptop && isSidebarOpen) {
@@ -30,13 +32,20 @@ const Navbar = () => {
     };
   }, []);
 
+  const services = [
+    {
+      name: 'Ebook Publishing Services',
+      link: '/ebook-publishing-services',
+    },
+  ];
+
   return (
     <section
       className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ${
         scrollPosition > 50 ? 'bg-white' : 'bg-transparent'
       }`}
     >
-      <div className="py-4 flex items-center justify-between px-4 md:px-10 lg:px-10 xl:px-20 2xl:px-40">
+      <div className="py-4 flex items-center justify-between px-4 md:px-4 lg:px-10 xl:px-20 2xl:px-40">
         <div className="flex-shrink-0">
           <Link href="/">
             <Image
@@ -61,7 +70,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <div className="hidden md:flex space-x-4 lg:space-x-4 xl:space-x-12">
+        <div className="hidden md:flex space-x-1 lg:space-x-4 xl:space-x-12">
           <Link
             href="/about-us"
             className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#802312]"
@@ -74,18 +83,37 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
-          <Link
-            href="ebook-publishing-services"
-            className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#801f12]"
-          >
-            Services
-          </Link>
-          <Link
-            href="/"
-            className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#801912]"
-          >
-            Blogs
-          </Link>
+          {/* Services Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setIsDropdownOpen((prev) => !prev)}
+              className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#802312] flex items-center space-x-1"
+            >
+              <span>Services</span>
+              {isDropdownOpen ? (
+                <ChevronUpIcon className="h-4 w-4 text-sm lg:text-base xl:text-xl font-medium" />
+              ) : (
+                <ChevronDownIcon className="h-4 w-4 text-sm lg:text-base xl:text-xl font-medium" />
+              )}
+            </button>
+            {isDropdownOpen && (
+              <div className="absolute top-full left-0 w-56 bg-white shadow-md border rounded-md mt-2">
+                <ul className="divide-y">
+                  {services.map((service, index) => (
+                    <li key={index}>
+                      <Link
+                        href={service.link}
+                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#802312]"
+                        onClick={() => setIsDropdownOpen(false)} // Close dropdown
+                      >
+                        {service.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
 
         {!isSidebarOpen && (
@@ -94,19 +122,19 @@ const Navbar = () => {
               <div className="flex items-center space-x-2 z-10 transition-all duration-300 group-hover:-translate-y-8 group-hover:opacity-0">
                 <BsWhatsapp size={22} />
                 <Link
-                  href="http://wa.me/+123456789"
+                  href="http://wa.me/+1(206)746-7149"
                   className="text-sm lg:text-base xl:text-xl hover:text-green-500"
                 >
-                  +1 234 567 89
+                  +1(206)746-7149
                 </Link>
               </div>
               <div className="flex items-center space-x-2 absolute top-0 transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-green-500">
                 <BsWhatsapp size={22} />
                 <Link
-                  href="http://wa.me/+123456789"
+                  href="http://wa.me/++1(206)746-7149"
                   className="text-sm lg:text-base xl:text-xl hover:text-green-500"
                 >
-                  +1 234 567 89
+                  +1(206)746-7149
                 </Link>
               </div>
             </div>
@@ -156,7 +184,7 @@ const Navbar = () => {
                 alt="Business proposal writers"
                 width={150}
                 height={100}
-                className="object-contain"
+                className="object-contain h-auto w-auto"
                 onClick={() => setIsSidebarOpen(false)}
                 title="Business proposal writers"
               />
@@ -176,13 +204,33 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
-          <Link
-            href="/ebook-publishing-services"
-            onClick={() => setIsSidebarOpen(false)}
-            className="text-md lg:text-lg xl:text-xl font-medium hover:text-[#124680]"
-          >
-            Services
-          </Link>
+          {/* Services Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setIsDropdownOpen((prev) => !prev)}
+              className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#802312] flex items-center space-x-1"
+            >
+              <span>Services</span>
+              <ChevronDownIcon className="h-4 w-4 text-sm lg:text-base xl:text-xl font-medium" />
+            </button>
+            {isDropdownOpen && (
+              <div className="absolute top-full left-0 w-56 bg-white shadow-md border rounded-md mt-2">
+                <ul className="divide-y">
+                  {services.map((service, index) => (
+                    <li key={index}>
+                      <Link
+                        href={service.link}
+                        className="block px-4 py-2 hover:bg-gray-100 hover:text-[#fa2a5e]"
+                        onClick={() => setIsDropdownOpen(false)} // Close dropdown
+                      >
+                        {service.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
           <Link
             href="/"
             onClick={() => setIsSidebarOpen(false)}
@@ -192,7 +240,7 @@ const Navbar = () => {
           </Link>
 
           <div className="flex gap-5">
-            <Link href="http://wa.me/+123456789">
+            <Link href="http://wa.me/+1(206)746-7149">
               <div className="bg-green-500 text-white p-2 rounded-xl">
                 <BsWhatsapp size={26} />
               </div>

@@ -30,7 +30,7 @@ const Order = () => {
           alt=""
           height={500}
           width={500}
-          className="w-[300px] lg:w-[500px]"
+          className="w-[300px] lg:w-[500px] h-auto"
         />
       </div>
     </section>

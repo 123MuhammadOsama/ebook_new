@@ -67,7 +67,7 @@ const Ghost = () => {
               alt={image.alt}
               height={400}
               width={300}
-              className="transition-all duration-700 ease-linear object-contain"
+              className="transition-all duration-700 ease-linear object-contain h-auto w-auto"
             />
           </SwiperSlide>
         ))}

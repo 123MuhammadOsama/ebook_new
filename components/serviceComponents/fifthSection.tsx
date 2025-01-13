@@ -44,13 +44,13 @@ const Testimonial = () => {
       <div
         className="bg-red-600 w-[90%] sm:w-[500px] text-white font-bold py-4 sm:py-2 text-center
          mx-auto sm:absolute sm:left-[100px] md:left-[200px] lg:left-[300px]
-        xl:left-[450px] 2xl:left-[650px] top-[-80px] sm:top-[-40px] -rotate-6 mb-8 sm:mb-0 2xl:py-8"
+        xl:left-[450px] 2xl:left-[500px] top-[-80px] sm:top-[-40px] -rotate-6 mb-8 sm:mb-0 2xl:py-8"
       >
         <h2 className="text-[26px] lg:text-[28px]">
           No-Filter Clients’ Feedback
         </h2>
       </div>
-      <p className="text-white text-center text-base text-[14px] lg:text-[16px] px-4 pt-10 2xl:pt-20 sm:px-24 md:px-20 lg:px-40 2xl:px-[600px]">
+      <p className="text-white text-center text-base text-[14px] lg:text-[16px] px-4 pt-10 2xl:pt-20 sm:px-24 md:px-20 lg:px-40 2xl:px-[200px]">
         Don’t just take our word for it—see why our clients keep coming back for
         more. Here’s the tea!
       </p>
@@ -84,7 +84,7 @@ const Testimonial = () => {
                   alt="comma"
                   width={50}
                   height={100}
-                  className="absolute top-3 left-5"
+                  className="absolute top-3 left-5 h-10 w-10"
                 />
                 <div className="flex flex-col items-center">
                   <Image
@@ -109,7 +109,7 @@ const Testimonial = () => {
                     alt="comma"
                     width={50}
                     height={100}
-                    className="absolute bottom-2 right-4"
+                    className="absolute bottom-2 right-4 h-10 w-10"
                   />
                 </div>
               </div>
@@ -118,9 +118,9 @@ const Testimonial = () => {
         </Swiper>
 
         <div className="mt-8 sm:mt-5 text-center">
-          <h3 className="text-[22px] lg:text-[24px] font-bold mb-10 sm:mb-20 w-full xl:w-[300px] 2xl:w-[600px]">
+          <p className="text-[22px] lg:text-[24px] font-bold mb-10 sm:mb-20 w-full xl:w-[300px] 2xl:w-[600px]">
             1000+ Positive Reviews Reflecting Customer Satisfaction
-          </h3>
+          </p>
           <div className="flex gap-5 sm:gap-10 justify-center">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
