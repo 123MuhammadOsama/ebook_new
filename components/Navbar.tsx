@@ -52,7 +52,7 @@ const Navbar = () => {
               src="/logo.png"
               alt="eBook"
               width={200}
-              height={100}
+              height={0} // Specify 0 or undefined to let Next.js auto-calculate based on the aspect ratio
               className="object-contain"
               title="eBook"
             />

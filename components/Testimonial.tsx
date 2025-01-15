@@ -76,7 +76,7 @@ const Testimonial = () => {
         >
           {reviews.map((review) => (
             <SwiperSlide key={review.id}>
-              <div className="bg-white text-black rounded-lg p-5 shadow-md w-auto h-[300px] sm:h-[400px] relative">
+              <div className="bg-white text-black rounded-lg p-5 shadow-md w-auto h-[300px] sm:h-[420px] relative">
                 <Image
                   src="/inverted-commas-open.png"
                   alt="comma"

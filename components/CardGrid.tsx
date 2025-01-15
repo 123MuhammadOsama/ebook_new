@@ -5,37 +5,37 @@ import Image from 'next/image';
 const Features = () => {
   const features = [
     {
-      icon: '/card1.jpeg',
+      icon: '/card1.jpg',
       title: 'Ebook Writing',
       description:
         'Just share your ideas, and we’ll create a story readers won’t want to put down! Every chapter is thoughtfully written, keeping the narrative alive.',
     },
     {
-      icon: '/card2.jpeg',
+      icon: '/card2.png',
       title: 'Ebook Editing',
       description:
         'We refine your manuscript, perfecting flow, tone, and clarity to ensure your ebook resonates deeply with readers and keeps them hooked.',
     },
     {
-      icon: '/card3.jpeg',
+      icon: '/card3.png',
       title: 'Ebook Proofreading',
       description:
         'We catch every tiny typo and grammar glitch! Our proofreaders comb through your ebook, making it look perfect and professional.',
     },
     {
-      icon: '/card4.jpeg',
+      icon: '/card4.jpg',
       title: 'Ebook Cover Design',
       description:
         'Your cover is your first impression, and we make it count! Our designs capture your ebook’s vibe, making it irresistible to potential readers.',
     },
     {
-      icon: '/card5.jpeg',
+      icon: '/card5.jpg',
       title: 'Ebook Publication',
       description:
         'We manage the whole publishing process, ensuring your ebook is formatted and ready for distribution across major platforms with ease.',
     },
     {
-      icon: '/card4.jpeg',
+      icon: '/card6.jpeg',
       title: 'Ebook Marketing',
       description:
         'We get your ebook noticed! Our marketing pros know how to hit your target audience, boost visibility, and create lasting buzz for your work.',
@@ -65,10 +65,9 @@ const Features = () => {
               <Image
                 src={feature.icon}
                 alt={`${feature.title} icon`}
-                layout="responsive"
-                width={100}
-                height={100}
-                className="max-h-52 w-auto object-cover"
+                width={800}
+                height={800}
+                className="h-full w-full object-cover bg-black"
               />
               <div className="p-6">
                 <span className="font-bold text-xl mb-2 text-start block">

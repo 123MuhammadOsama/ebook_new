@@ -64,7 +64,6 @@ const ThirdSection = () => {
           <Image
             src="/Mask_group.png"
             alt="writing"
-            layout="responsive"
             width={700}
             height={100}
             title="writing"

@@ -6,8 +6,8 @@ import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className="bg-red-900 flex flex-col lg:flex-row px-8 lg:px-10 2xl:px-20 py-10 lg:py-20">
-      {/* Right Section */}
+    <div className="bg-red-900 flex flex-col lg:flex-row justify-between px-8 lg:px-20 2xl:px-60 py-10 lg:py-20">
+      {/* Left Section */}
       <div className="max-w-full lg:max-w-lg xl:max-w-xl">
         <Image
           src="/footer.png"
@@ -41,80 +41,32 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Left Section */}
-      <div className="mx-5 xl:px-32 text-white flex flex-col lg:flex-row  space-y-5 pt-10 lg:pt-0 space-x-0 lg:space-x-4 xl:space-x-10 2xl:space-x-20 items-center">
-        {/* pehla */}
-        <div className="text-center lg:pb-32">
-          <h3 className="font-bold text-xl">Usefull Links</h3>
-          <ul className="flex-col mt-4 space-y-1">
-            <Link href="/">
-              <li className="hover:text-yellow-300 underline">Home</li>
-            </Link>
+      {/* Right Section */}
+      <div className="flex flex-col lg:flex-row text-center lg:text-left gap-10 mt-10 lg:mt-0">
+        {/* Useful Links */}
+        <div className="text-center">
+          <p className="text-xl font-bold text-white pb-5">Useful Link</p>
+          <ul>
             <Link href="/about-us">
-              <li className="hover:text-yellow-300 underline">About Us</li>
-            </Link>
-            <Link href="/ebook-publishing-services">
-              <li className="hover:text-yellow-300 underline">Services</li>
+              <li className="text-white hover:underline hover:text-yellow-300">
+                About Us
+              </li>
             </Link>
             <Link href="/contact-us">
-              <li className="hover:text-yellow-300 underline">Contact Us</li>
+              <li className="text-white hover:underline hover:text-yellow-300">
+                Contact Us
+              </li>
             </Link>
           </ul>
         </div>
 
-        {/* dosra */}
+        {/* Services */}
         <div className="text-center">
-          <h3 className="font-bold text-xl">Services</h3>
-
-          <ul className="flex-col mt-4 space-y-1">
-            <Link href="/">
-              <li className="hover:text-yellow-300 underline">
-                Fiction Ebook Writing
-              </li>
-            </Link>
-            <Link href="/about">
-              <li className="hover:text-yellow-300 underline">
-                Non-Fiction Ebook Writing
-              </li>
-            </Link>
-            <Link href="/services">
-              <li className="hover:text-yellow-300 underline">
-                Biographies & Memoirs boo writing
-              </li>
-            </Link>
-            <Link href="/contact">
-              <li className="hover:text-yellow-300 underline">
-                Self-Help Ebook Writing
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="hover:text-yellow-300 underline">
-                Ebook Editing & Proofreading
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="hover:text-yellow-300 underline">
-                Ebook Cover Design
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="hover:text-yellow-300 underline">
-                3D Ebook Mockups
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="hover:text-yellow-300 underline">
-                EBook Publishing Services
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="hover:text-yellow-300 underline">
-                EBook Marketing
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="hover:text-yellow-300 underline">
-                EBook Author Website
+          <p className="text-xl font-bold text-white pb-5">Services</p>
+          <ul>
+            <Link href="https://ebookwritingstudio.com/">
+              <li className="text-white hover:underline hover:text-yellow-300">
+                Ebook Writing
               </li>
             </Link>
           </ul>

@@ -34,25 +34,15 @@ const FourthSection: React.FC = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: '20px' }}>
+    <div className="items-center justify-center text-center bg-white py-10">
       {/* Center-Aligned Button */}
-      <button
-        style={{
-          backgroundColor: 'red',
-          color: 'white',
-          padding: '10px 20px',
-          fontSize: '28px', // Increased font size
-          fontWeight: 'bold', // Made text bold
-          borderRadius: '5px',
-          border: 'none',
-          marginBottom: '20px',
-          width: '80%',
-          maxWidth: '720px',
-          height: 'auto',
-        }}
-      >
-        The Faces Behind Your Next Bestselling Ebook
-      </button>
+      <div className="flex items-center justify-center text-center bg-white  ">
+        <div className="items-center justify-center text-center bg-red-500 rounded-lg py-2 px-4 max-w-[600px]">
+          <p className="text-white text-2xl font-bold">
+            The Faces Behind Your Next Bestselling Ebook
+          </p>
+        </div>
+      </div>
 
       {/* Responsive Paragraph */}
       <p
@@ -82,27 +72,13 @@ const FourthSection: React.FC = () => {
           gap: '10px',
           overflow: 'hidden',
           width: '100%',
-          maxWidth: '887px',
+          maxWidth: '1200px',
           height: 'auto',
           margin: '0 auto',
           position: 'relative',
         }}
       >
         {/* Left Arrow */}
-        <button
-          onClick={() => slide(-1)} // Move left
-          style={{
-            position: 'absolute',
-            left: '10px',
-            fontSize: '24px',
-            cursor: 'pointer', // Always enabled
-            color: 'red',
-            background: 'none',
-            border: 'none',
-          }}
-        >
-          &lt;
-        </button>
 
         {/* Carousel Items */}
         <div
@@ -158,8 +134,8 @@ const FourthSection: React.FC = () => {
           onClick={() => slide(1)} // Move right
           style={{
             position: 'absolute',
-            right: '10px',
-            fontSize: '24px',
+            right: '0px',
+            fontSize: '40px',
             cursor: 'pointer', // Always enabled
             color: 'red',
             background: 'none',

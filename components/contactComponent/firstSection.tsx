@@ -233,11 +233,11 @@ const ContactForm = () => {
         </button>
       </form>
 
-      <div className="w-full 2xl:w-1/2 2xl:h-[650px] mt-8 lg:mt-0 lg:ml-8 flex-grow lg:max-w-3xl 2xl:mr-28">
-        <div className="hidden lg:block mt-24">
+      <div className="w-full 2xl:w-1/2 2xl:h-[650px] mt-8 lg:mt-0 lg:ml-8 flex-grow lg:max-w-3xl 2xl:mr-28 items-center justify-center">
+        <div className="hidden lg:block mt-32 mb-20">
           <Image
-            src="/Mask_group.png"
-            alt="our team"
+            src="/contact.jpg"
+            alt="contact us"
             width={500}
             height={500}
             title="our team"
@@ -255,10 +255,10 @@ const ContactForm = () => {
               Phone <br />
               <Link
                 rel="nofollow"
-                href="https://wa.me/254797755226"
+                href="https://wa.me/12067467149"
                 className="hover:underline"
               >
-                +254797755226
+                +1(206)746-7149
               </Link>
             </div>
           </div>
@@ -271,10 +271,10 @@ const ContactForm = () => {
               Email <br />
               <Link
                 rel="nofollow"
-                href="mailto:scriptershubltd@gmail.com"
+                href="mailto:info@ebookwritingstudio.com"
                 className="hover:underline"
               >
-                scriptershubltd@gmail.com
+                info@ebookwritingstudio.com
               </Link>
             </div>
           </div>
@@ -283,10 +283,7 @@ const ContactForm = () => {
               size={40}
               className="mr-4 p-2 bg-red-200 rounded-full text-[#e24444]"
             />
-            <div>
-              Nairobi, Kenya <br />
-              Kasarani, Mwiki
-            </div>
+            <div>30 N Gould St Ste R Sheridan, WY 82801</div>
           </div>
         </div>
       </div>

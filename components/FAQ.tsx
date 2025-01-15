@@ -79,7 +79,7 @@ const FAQ = () => {
         </div>
 
         {/* FAQ List Section */}
-        <div className="space-y-6 lg:space-y-10 p-4 w-full lg:w-[400px] xl:w-[700px] 2xl:w-[1500px] pt-16">
+        <div className="space-y-6 lg:space-y-10 p-4 w-full lg:w-[600px] xl:w-[700px] 2xl:w-[1500px] pt-16">
           {faqItems.map((item, index) => (
             <div key={index} className="border-b-2 border-black pb-4">
               <div

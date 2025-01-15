@@ -6,7 +6,7 @@ const Story = () => {
     <div className="relative flex h-[300px] bg-black items-center justify-center">
       <Image
         src="/books-bg.png"
-        alt="Backgroun Image"
+        alt="Background Image"
         layout="fill"
         className="object-cover h-auto w-auto"
       />

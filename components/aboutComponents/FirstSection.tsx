@@ -60,14 +60,14 @@ const FirstSection = () => {
       </div>
 
       {/* Right Image */}
-      <div className="flex justify-center items-center w-full lg:w-1/3 pt-10 md:pt-16">
+      <div className="hidden lg:flex justify-center items-center w-full lg:w-1/3 pt-10 md:pt-16">
         <div className="w-full max-w-[1300px] h-[250px] sm:h-[430px]">
           <Image
             src="/about1.png"
             alt="expert"
             width={1000}
             height={600}
-            className="h-full w-full "
+            className="h-full w-full object-contain"
             title="expert"
           />
         </div>
